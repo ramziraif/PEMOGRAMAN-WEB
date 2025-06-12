@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>TopUpZone - Form Pembelian</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">⚡KUMISTOPUP</div>
+    <nav>
+      <a href="index.html">BERANDA</a>
+      <a href="produk.html">PRODUK</a>
+      <a href="form.html" class="active">FORM</a>
+    </nav>
+    
+  </header>
+  <main class="form-box">
+    <h2>Form Pembelian</h2>
+    <form action="success.html" method="GET">
+      <label for="kategori">Pilih Game:</label>
+      <select id="kategori" name="kategori" required>
+        <option value="ml">Mobile Legends</option>
+        <option value="ff">Free Fire</option>
+        <option value="genshin">Genshin Impact</option>
+        <option value="pubg">Pubg</option>
+        <option value="cs go">Cs Go</option>
+        <option value="Roblox">Roblox</option>
+        <option value="Call of duty">Call of duty</option>
+      </select>
+      <label for="id">ID Pengguna:</label>
+      <input type="text" id="id" name="id" required>
+      <label for="nominal">Nominal:</label>
+      <select id="nominal" name="nominal" required>
+        <option value="10k">Rp 10.000</option>
+        <option value="20k">Rp 20.000</option>
+        <option value="50k">Rp 50.000</option>
+        <option value="100k">Rp 100.000</option>
+        <option value="200k">Rp 200.000</option>
+        <option value="1jt">Rp 1.000.000</option>
+      </select>
+      <button type="submit" class="btn">Beli Sekarang</button>
+    </form>
+  </main>
+</body>
+</html>
